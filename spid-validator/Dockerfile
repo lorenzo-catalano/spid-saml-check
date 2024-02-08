@@ -32,8 +32,8 @@ RUN cd /spid-validator && \
 # Ports exposed
 EXPOSE 8080
 
-RUN chown -R validator:validator /spid-validator/*
+RUN chown -R 1001 /spid-validator/*
 
-USER validator
+USER 1001
 
 ENTRYPOINT ["npm", "run", "start-prod"]
