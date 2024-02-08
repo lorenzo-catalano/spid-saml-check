@@ -1,7 +1,7 @@
 const fs = require('fs-extra');
 const multer = require('multer');
 const upload = multer({dest: 'temp/'});
-const unzip = require('unzip');
+const unzip = require('unzipper');
 const Utility = require('../lib/utils');
 const MetadataParser = require('../lib/saml-utils').MetadataParser;
 const config_dir = require('../../config/dir.json');
